@@ -85,4 +85,17 @@ fun main(args:Array<String>){
     }
 }
 
+//2475
+import java.io.*
+import kotlin.math.pow
+fun main(args: Array<String>){
+    with(BufferedReader(InputStreamReader(System.`in`))){
+        println(readLine()!!.let{
+            it.split(" ")
+            .map{it.toDouble().pow(2)}
+            .reduce{acc, d -> acc+d}.toInt()%10
+        })
+    }
+}
+
 //
