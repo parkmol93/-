@@ -29,3 +29,17 @@ fun main(){
         })
     }
 }
+
+// 여러줄 입력시
+import java.util.Scanner
+import java.math.BigInteger
+fun main(){
+    with(Scanner(System.`in`)){
+        val A=nextBigInteger()
+        val B=nextBigInteger()
+        println(A+B)
+        println(A-B)
+        println(A*B)
+    }
+}
+
