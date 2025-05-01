@@ -1,0 +1,31 @@
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.util.StringTokenizer
+fun main(args: Array<String>){
+    val br=BufferedReader(InputStreamReader(System.`in`))
+    val token=StringTokenizer(br.readLine())
+    println(token.nextToken().toDouble()/token.nextToken().toDouble())
+    br.close()
+}
+
+fun main(args: Array<String>){
+    val (A,B)=readln().split(" ").map{it.toInt()}
+    println(when{
+        A>B -> ">"
+        A==B -> "=="
+        else -> "<"
+    })
+}
+
+import java.util.Scanner
+fun main(){
+    with(Scanner(System.`in`)){
+        val A=nextInt()
+        val B=nextInt()
+        println(when{
+            A>B -> ">"
+            A==B -> "=="
+            else -> "<"
+        })
+    }
+}
