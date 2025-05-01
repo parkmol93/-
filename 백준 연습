@@ -43,3 +43,15 @@ fun main(){
     }
 }
 
+//2420
+import java.util.*
+fun main(){
+    with(Scanner(System.`in`)){
+        val N=nextLong()
+        val M=nextLong()
+        println(Math.abs(N-M))
+    }
+}
+
+
+
