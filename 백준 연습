@@ -185,4 +185,34 @@ fun main()=with(Scanner(System.`in`)) {
     )
 }
 
+//6840
+import java.util.Scanner
+fun main(){
+    with(Scanner(System.`in`)){
+        val bowls=IntArray(3){nextInt()}
+        bowls.sort()
+        print(bowls[1])
+    }  
+}
+
+import java.util.Scanner
+fun main(){
+    with(Scanner(System.`in`)){
+        val bowls=List(3){nextInt()}
+        print(bowls.sorted()[1])
+    }  
+}
+
+import java.util.Scanner
+fun main() {
+    with(Scanner(System.`in`)){
+        val bowls = mutableListOf<Int>()
+        repeat(3) {
+            bowls.add(nextInt())
+        }
+    bowls.sort()
+    println(bowls[1])
+    }
+}
+
 //
