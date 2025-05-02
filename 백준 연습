@@ -127,4 +127,62 @@ fun main(){
     }
 }
 
+//3003
+import java.util.Scanner
+fun main(){
+    with(Scanner(System.`in`)){
+        val chess=intArrayOf(1,1,2,2,2,8)
+        val result=IntArray(6){0}
+        var index=0
+        for(i in chess){
+            result[index]=i-nextInt()
+            index++
+        }
+        for(i in result){
+            print("$i ")
+        }
+    }
+}
+
+import java.util.Scanner
+fun main(){
+    with(Scanner(System.`in`)){
+        val chess=intArrayOf(1,1,2,2,2,8)
+        val result=IntArray(6){0}
+        for((index,i) in chess.withIndex()){
+            result[index]=i-nextInt()
+        }
+        for(i in result){
+            print("$i ")
+        }
+    }
+}
+
+//3733
+import java.util.Scanner
+fun main(){
+    val sc=Scanner(System.`in`)
+    val sb=StringBuilder()
+    var n:Int
+    var s:Int
+    while(sc.hasNext()){
+        n=sc.nextInt()
+        s=sc.nextInt()
+        sb.append(s/(n+1)).append("\n")
+    }
+    if(sb.isNotEmpty()){
+        sb.setLength(sb.length-1)
+    }
+    print(sb)
+}
+
+//5522
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)) {
+    println(
+        IntArray(5) { nextInt() }
+        .sum()
+    )
+}
+
 //
