@@ -233,4 +233,27 @@ fun main(){
     print(readln()!!.reversed())
 }
 
+//9086
+fun main(){
+    val sb=StringBuilder()
+    val n=readln()!!.toInt()
+    var str:String
+    repeat(n){
+        str=readln()
+        sb.append("${str.first()}${str.last()}\n")
+    }
+    print(sb)
+}
+
+fun main(){
+    val sb=StringBuilder()
+    val n=readln()!!.toInt()
+    var str:String
+    repeat(n){
+        str=readln()
+        sb.append("${str[0]}${str[str.lastIndex]}\n")
+    }
+    print(sb)
+}
+
 //
