@@ -215,4 +215,17 @@ fun main() {
     }
 }
 
+//8437
+import java.util.Scanner
+import java.math.BigInteger
+fun main(){
+    with(Scanner(System.`in`)){
+        val A=BigInteger(readLine())
+        val B=BigInteger(readLine())
+        val C=A.add(B).divide(BigInteger("2"))
+        val D=A.subtract(B).divide(BigInteger("2"))
+        print("${C}\n${D}")
+        }
+}
+
 //
