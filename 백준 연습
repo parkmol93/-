@@ -228,4 +228,9 @@ fun main(){
         }
 }
 
+//8545
+fun main(){
+    print(readln()!!.reversed())
+}
+
 //
