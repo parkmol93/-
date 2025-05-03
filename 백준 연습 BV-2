@@ -1,1 +1,22 @@
+//10951
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    var input:String?
+    while(readLine().also{input=it}!=null){
+        val nums=input!!.split(" ").map{it.toInt()}
+        sb.append("${nums[0]+nums[1]}\n")
+    }
+    print(sb)
+}
 
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    while(hasNext()){
+        sb.append(nextInt()+nextInt()).append("\n")
+    }
+    print(sb)
+}
+
+//
