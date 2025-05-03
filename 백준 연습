@@ -284,5 +284,23 @@ import java.util.Calendar
 fun main(){
     print(SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().timeInMillis))
 }
+->@@@@@timeInMillis는 Long 타입의 시간 (밀리초 단위)
+
+SimpleDateFormat.format(...)는 Date 객체 또는 시간(long)을 받을 수 있음
+
+✅ 대체 가능한 코드 (더 일반적임):
+kotlin
+복사
+편집
+SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().time)
+Calendar.getInstance().time 은 Date 객체를 반환
+
+SimpleDateFormat.format(...)에 자연스럽게 맞음
+
+차이점:
+코드	반환 타입	추천 여부
+calendar.timeInMillis	Long (밀리초)	가능하지만 덜 직관적
+calendar.time	Date 객체	✅ 더 자연스럽고 일반적@@@@@
+
 
 //
