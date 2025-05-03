@@ -303,4 +303,17 @@ calendar.timeInMillis	Long (밀리초)	가능하지만 덜 직관적
 calendar.time	Date 객체	✅ 더 자연스럽고 일반적@@@@@
 
 
+//10757
+import java.math.BigInteger
+fun main(){
+    val (A,B)=readln()!!.split(" ")
+    print(BigInteger(A)+BigInteger(B))
+}
+
+import java.util.Scanner
+import java.math.BigInteger
+fun main()=with(Scanner(System.`in`)){
+    print(BigInteger(next()).add(BigInteger(next())))
+}
+
 //
