@@ -19,4 +19,17 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
+//11654
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val c=next().first()
+    print(c.toInt())
+}
+
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val c=next()
+    print(c[0].toInt())
+}
+
 //
