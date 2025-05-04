@@ -47,4 +47,21 @@ fun main(){
         :fan::fan::fan:""".trimIndent())
 }
 
+//14681
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val A=nextInt()
+    val B=nextInt()
+    when{
+        A>0 -> when{
+            B>0 -> print("1")
+            else -> print("4")
+        }
+        A<0 -> when{
+            B>0 -> print("2")
+            else -> print("3")
+        }
+    }
+}
+
 //
