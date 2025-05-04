@@ -32,4 +32,19 @@ fun main()=with(Scanner(System.`in`)){
     print(c[0].toInt())
 }
 
+//14581
+fun main(){
+    print("""
+        :fan::fan::fan:
+        :fan::${readln()}::fan:
+        :fan::fan::fan:""".trimIndent().trimStart())
+}
+
+fun main(){
+    print("""
+        :fan::fan::fan:
+        :fan::${readln()}::fan:
+        :fan::fan::fan:""".trimIndent())
+}
+
 //
