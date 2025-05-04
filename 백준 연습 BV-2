@@ -64,4 +64,25 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//14928
+fun main(){
+    val number=readln()
+    var remain=0
+    for(i in number.indices){
+        remain=(10*remain+(number[i]-'0').toInt())%20000303
+        
+    }
+    print(remain)
+}
+
+fun main(){
+    val number=readln()
+    var remain=0
+    for(i in number.indices){
+        remain=(10*remain+number[i].toString().toInt())%20000303
+        
+    }
+    print(remain)
+}
+
 //
