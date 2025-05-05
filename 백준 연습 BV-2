@@ -111,4 +111,14 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//16170
+import java.time.ZonedDateTime
+import java.time.ZoneOffset
+fun main(){
+    val nowUtc=ZonedDateTime.now(ZoneOffset.UTC)
+    println(nowUtc.year)
+    println(nowUtc.monthValue)
+    println(nowUtc.dayOfMonth)
+}
+
 //
