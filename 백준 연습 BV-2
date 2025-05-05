@@ -95,4 +95,20 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//15727
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    print((n+4)/5)
+}
+
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    when{
+        n%5==0 -> print(n/5)
+        else -> print(n/5+1)
+    }
+}
+
 //
