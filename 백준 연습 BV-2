@@ -85,7 +85,7 @@ fun main(){
     print(remain)
 }
 
-//15323
+//15232
 import java.util.Scanner
 fun main()=with(Scanner(System.`in`)){
     val n=nextInt()
