@@ -121,4 +121,18 @@ fun main(){
     println(nowUtc.dayOfMonth)
 }
 
-//
+//18409(+++++ in [ ... ] 형식이 더 효율적일듯 +++++)
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    nextLine()
+    val input=nextLine()
+    var count=0
+    for(i in input){
+        when{
+            i=='a' || i=='e' || i=='i' || i=='o' || i=='u' -> count++
+            else -> {}
+        }
+    }
+    print(count)
+}
