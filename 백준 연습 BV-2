@@ -136,3 +136,13 @@ fun main()=with(Scanner(System.`in`)){
     }
     print(count)
 }
+
+//22193 (nextLine()으로 한줄 치워버리기)
+import java.util.Scanner
+import java.math.BigInteger
+fun main()=with(Scanner(System.`in`)){
+    nextLine()
+    print(nextBigInteger()*nextBigInteger())
+}
+
+//
