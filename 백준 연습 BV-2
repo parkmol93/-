@@ -211,3 +211,22 @@ fun main()=print(
                                              8DNNI=.~~~~=NDDNNNNDDNDNN.~~~~~IDDNDND7:.                                  
                                                 ?DNNDD?~DD          ~NN~~=NDD${'$'}                                          
                                                      :DDD.            NNNN=                                             """)
+
+//25083("""의 경우가 더 빠름)
+fun main(){
+    println("         ,r'\"7")
+    println("r`-_   ,'  ,/")
+    println(" \\. \". L_r'")
+    println("   `~\\/")
+    println("      |")
+    println("      |")
+}
+
+fun main()=print(
+"""         ,r'"7
+r`-_   ,'  ,/
+ \. ". L_r'
+   `~\/
+      |
+      |""")
+
