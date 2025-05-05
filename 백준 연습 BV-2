@@ -85,4 +85,14 @@ fun main(){
     print(remain)
 }
 
+//15323
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    val m=nextInt()
+    repeat(n){
+        println("*".repeat(m))
+    }
+}
+
 //
