@@ -87,4 +87,25 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//31429
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    val p=intArrayOf(12,11,11,10,9,9,9,8,7,6,6)
+    val t=intArrayOf(1600,894,1327,1311,1004,1178,1357,837,1055,556,773)
+    when(n){
+        1 -> print("${p[n-1]} ${t[n-1]}")
+        2 -> print("${p[n-1]} ${t[n-1]}")
+        3 -> print("${p[n-1]} ${t[n-1]}")
+        4 -> print("${p[n-1]} ${t[n-1]}")
+        5 -> print("${p[n-1]} ${t[n-1]}")
+        6 -> print("${p[n-1]} ${t[n-1]}")
+        7 -> print("${p[n-1]} ${t[n-1]}")
+        8 -> print("${p[n-1]} ${t[n-1]}")
+        9 -> print("${p[n-1]} ${t[n-1]}")
+        10 -> print("${p[n-1]} ${t[n-1]}")
+        else -> print("${p[10]} ${t[10]}")
+    }
+}
+
 //
