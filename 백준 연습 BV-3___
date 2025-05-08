@@ -1,1 +1,9 @@
+//27324
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val line=readLine()!!.toInt()
+    if(line/10==line%10) print(1)
+    else print(0)
+}
 
+//
