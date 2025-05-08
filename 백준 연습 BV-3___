@@ -40,4 +40,12 @@ fun main()=with(Scanner(System.`in`)){
     print(fact(BigInteger("1"),n))   
 }
 
+//27866
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val line=readLine()!!
+    val n=nextInt()
+    print(line.substring(n-1,n))
+}
+
 //
