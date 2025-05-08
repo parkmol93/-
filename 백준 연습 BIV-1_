@@ -32,4 +32,17 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
+//2439(
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    for(i in 1..n){
+        for(j in n-1 downTo 0){
+            if(j>=i) print(" ")
+            else print("*")
+        }
+        print("\n")
+    }
+}
+
 //
