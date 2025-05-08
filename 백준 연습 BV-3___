@@ -6,4 +6,24 @@ fun main()=with(Scanner(System.`in`)){
     else print(0)
 }
 
-//
+//27433
+import java.util.Scanner
+import java.math.BigInteger
+fun factorial(n:BigInteger,acc:BigInteger):BigInteger{
+    return if(n<=BigInteger("1")) return acc
+    else factorial(n-BigInteger("1"),acc*n)
+}
+fun main()=with(Scanner(System.`in`)){
+    print(factorial(nextBigInteger(),BigInteger("1")))
+}
+
+import java.util.Scanner
+fun factorial(n:Long):Long{
+    return if(n<=1) 1
+    else n*factorial(n-1)
+}
+fun main()=with(Scanner(System.`in`)){
+    print(factorial(nextLong()))
+}
+
+
