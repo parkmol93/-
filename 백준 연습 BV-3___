@@ -48,4 +48,12 @@ fun main()=with(Scanner(System.`in`)){
     print(line.substring(n-1,n))
 }
 
+//29699
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()%14
+    val s="WelcomeToSMUPC"
+    print(if(n==0) "C" else s.substring(n-1,n))
+}
+
 //
