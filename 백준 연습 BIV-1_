@@ -50,4 +50,20 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//2530
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val h=nextInt()
+    val m=nextInt()
+    val s=nextInt()
+    val t=nextInt()
+    val news=(s+t)%60
+    val pluss=(s+t)/60
+    val newm=(m+pluss)%60
+    val plusm=(m+pluss)/60
+    val newh=(h+plusm)%24
+    
+    print("${newh} ${newm} ${news}")
+}
+
 //
