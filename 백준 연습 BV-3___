@@ -26,4 +26,18 @@ fun main()=with(Scanner(System.`in`)){
     print(factorial(nextLong()))
 }
 
+//27434
+import java.util.Scanner
+import java.math.BigInteger
+fun fact(a:BigInteger,n:BigInteger):BigInteger{
+    val b=(a+n)/BigInteger("2")
+    var acc:BigInteger=a
+    if(a<n) acc=fact(a,b)*fact(b+BigInteger("1"),n)
+    return acc
+}
+fun main()=with(Scanner(System.`in`)){
+    val n=nextBigInteger()
+    print(fact(BigInteger("1"),n))   
+}
 
+//
