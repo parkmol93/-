@@ -1,1 +1,15 @@
+//33515
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val a=nextInt()
+    val b=nextInt()
+    print(Math.min(a,b))
+}
 
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val a=List(2){nextInt()}.sorted()
+    print(a.first())
+}
+
+//
