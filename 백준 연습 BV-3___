@@ -56,4 +56,35 @@ fun main()=with(Scanner(System.`in`)){
     print(if(n==0) "C" else s.substring(n-1,n))
 }
 
+//30224
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    when{
+        n.toString().contains("7") -> when{
+            n%7==0 -> print(3)
+            else -> print(2)
+            }
+        else -> when{
+            n%7==0 -> print(1)
+            else -> print(0)
+        }
+    }
+}
+
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val n=nextInt()
+    when{
+        "7" in n.toString() -> when{
+            n%7==0 -> print(3)
+            else -> print(2)
+            }
+        else -> when{
+            n%7==0 -> print(1)
+            else -> print(0)
+        }
+    }
+}
+
 //
