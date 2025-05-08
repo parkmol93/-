@@ -32,7 +32,12 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
-//2439(
+//2439(별 찍기)
+    *
+   **
+  ***
+ ****
+*****
 import java.util.Scanner
 fun main()=with(Scanner(System.`in`)){
     val n=nextInt()
