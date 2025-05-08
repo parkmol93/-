@@ -1,1 +1,35 @@
+//1264
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    while(hasNext()){
+        var count=0
+        val line=nextLine()
+        if(line=="#") break
+        for(i in line){
+            when(i.toLowerCase()){
+                'a','e','i','o','u' -> count++
+                else -> {}
+            }
+        }
+        sb.append("$count\n")
+    }
+    print(sb)
+}
 
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    while(hasNext()){
+        var count=0
+        val line=nextLine()
+        if(line=="#") break
+        for(i in line){
+            if(i.toLowerCase() in arrayOf('a','e','i','o','u')) count++
+        }
+        sb.append("$count\n")
+    }
+    print(sb)
+}
+
+//
