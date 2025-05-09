@@ -134,4 +134,21 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
+//5575
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    repeat(3){
+        val list=readLine()!!.split(" ").map{it.toInt()}
+        val between=(list[3]-list[0])*3600+(list[4]-list[1])*60+(list[5]-list[2])
+        val news=between%60
+        val pluss=between/60
+        val newm=pluss%60
+        val plusm=pluss/60
+        val newh=plusm%24
+        sb.append("$newh $newm $news\n")
+    }
+    print(sb)
+}
+
 //
