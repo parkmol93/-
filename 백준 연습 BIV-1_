@@ -83,4 +83,41 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
+//5358
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    while(true){
+        val line=readLine() ?: break
+        val newline=line
+            .replace("i","#")
+            .replace("e","i")
+            .replace("#","e")
+            .replace("I","#")
+            .replace("E","I")
+            .replace("#","E")
+        sb.append("${newline}\n")
+    }
+    print(sb)
+}
+
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    while(true){
+        val line=readLine() ?: break
+        val newline=line.map{
+            when(it){
+                'i' -> 'e'
+                'e' -> 'i'
+                'I' -> 'E'
+                'E' -> 'I'
+                else -> it
+            }
+        }.joinToString("")
+        sb.append("${newline}\n")
+    }
+    print(sb)
+}
+
 //
