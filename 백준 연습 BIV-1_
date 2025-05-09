@@ -205,4 +205,10 @@ fun main()=with(Scanner(System.`in`)){
     }
 }
 
+//11282
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    print((nextLine()!!.toInt()+44031).toChar())
+}
 
+//
