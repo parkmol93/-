@@ -66,4 +66,21 @@ fun main()=with(Scanner(System.`in`)){
     print("${newh} ${newm} ${news}")
 }
 
+//5357
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    val n=nextInt()
+    nextLine()
+    repeat(n){
+        val line=nextLine()
+        var duplicate=line[0].also{sb.append(it)}
+        for(i in 1 until line.length){
+            if(line[i]!=duplicate) duplicate=line[i].also{sb.append(it)}
+        }
+    sb.append("\n")
+    }
+    print(sb)
+}
+
 //
