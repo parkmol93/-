@@ -191,3 +191,18 @@ fun main()=with(Scanner(System.`in`)){
     }
     print(sb)
 }
+
+//10808
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val line=nextLine()!!
+    val list=MutableList(26){0}
+    for(i in line){
+        list[(i-'a').toInt()]++
+    }
+    for(k in list){
+        print("$k ")
+    }
+}
+
+
