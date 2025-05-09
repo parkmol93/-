@@ -151,4 +151,17 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
-//
+//8858
+import java.util.Scanner
+import java.math.BigInteger
+tailrec fun factorial(a:BigInteger,n:BigInteger):BigInteger{
+    val b=(a+n)/BigInteger("2")
+    return if(a<n) factorial(a,b)*factorial(b+1,n)
+    else a
+}
+fun main()=with(Scanner(System.`in`)){
+    val answer:BigInteger=factorial(BigInteger("1"),nextBigInteger())
+    print(answer.toString().last())
+}
+
+
