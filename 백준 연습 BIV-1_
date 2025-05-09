@@ -120,4 +120,18 @@ fun main()=with(Scanner(System.`in`)){
     print(sb)
 }
 
+//5524
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    val n=nextInt()
+    nextLine()
+    repeat(n){
+        val line=nextLine()
+        val newline=line.map{it.toLowerCase()}.joinToString("")
+        sb.append("${newline}\n")
+    }
+    print(sb)
+}
+
 //
