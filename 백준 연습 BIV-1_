@@ -172,4 +172,22 @@ fun main()=with(Scanner(System.`in`)){
     print(if(a%2==0L || b%2==0L) 0 else Math.min(a,b))
 }
 
-//
+//9782
+import java.util.Scanner
+fun median(list:List<Int>):Double{
+    val newl=list.......................sorted()...................................사용할수도있
+    val s=list.size
+    return if(s%2==0) (newl[s/2-1]+newl[s/2])/2.0
+    else newl[s/2].toDouble()
+}
+fun main()=with(Scanner(System.`in`)){
+    val sb=StringBuilder()
+    var input:Int
+    var count=1
+    while(nextInt().also{input=it}!=0){
+        val list=List(input){nextInt()}
+        sb.append("Case ${count}: %.1f\n".format(median(list)))
+        count++
+    }
+    print(sb)
+}
