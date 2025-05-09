@@ -164,4 +164,12 @@ fun main()=with(Scanner(System.`in`)){
     print(answer.toString().last())
 }
 
+//8674
+import java.util.Scanner
+fun main()=with(Scanner(System.`in`)){
+    val a=nextLong()
+    val b=nextLong()
+    print(if(a%2==0L || b%2==0L) 0 else Math.min(a,b))
+}
 
+//
